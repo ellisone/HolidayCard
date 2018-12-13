@@ -10,6 +10,7 @@ class Star{
     timer=100;
   }
   
+  
   void move(){
     timer--;
     if(timer<=0){
