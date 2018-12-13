@@ -10,15 +10,6 @@ class Star{
     timer=100;
   }
   
-  float getXVel(){
-    return xV;
-  }
-  
-  float getYVel(){
-    return yV;
-  }
-  
-  
   void move(){
     timer--;
     if(timer<=0){
