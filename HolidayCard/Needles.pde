@@ -40,11 +40,11 @@ class Needle{
     y=y1;
     xVe=-xv*((float)(Math.random())+.5);
     if(xVe>0){
-      xVe-=s.xVel*3;
+      xVe-=s.xVel;
     }
     yVe=-yv*((float)(Math.random())+.5);
     if(yVe>0){
-      yVe-=s.yVel*3;
+      yVe-=s.yVel;
     }
     direction=(int)(Math.random()*4);
     transparency=0;

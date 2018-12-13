@@ -1,5 +1,5 @@
 class Star{
-  float x,y,xV,yV,yA,xA,timer;
+  float x,y,xV,yV,yA,xA,timer, xReal, yReal;
   Star(float Startx,float Starty){
     x=Startx;
     y=Starty;
@@ -12,6 +12,7 @@ class Star{
   
   
   void move(){
+
     timer--;
     if(timer<=0){
       timer=100;
@@ -43,6 +44,14 @@ class Star{
     }else if(y>=height-100){
       yA=-.25;
     }
+
+    
+    //you can delete this its just for testing purposes
+    //x = mouseX;
+    //y = mouseY;
+    
+    xReal = s.xPos + x;
+    yReal = s.yPos + y;
   }
   
   void show(){
@@ -51,7 +60,6 @@ class Star{
     triangle(x,y,x+26,y,x-12,y-12);
     triangle(x,y,x+26,y,x-12,y+12);
     triangle(x,y,x+12,y-20,x+12,y+20);
-    triangle(x+26,y,x,y+5,x,y-5);
   }
   
   void render(){
