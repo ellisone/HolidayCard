@@ -39,7 +39,13 @@ class Needle{
     x=x1;
     y=y1;
     xVe=-xv*((float)(Math.random())+.5);
+    if(xVe>0){
+      xVe-=s.xVel*3;
+    }
     yVe=-yv*((float)(Math.random())+.5);
+    if(yVe>0){
+      yVe-=s.yVel*3;
+    }
     direction=(int)(Math.random()*4);
     transparency=0;
   }
@@ -52,6 +58,7 @@ class Needle{
    void show(){
      transparency++;
      stroke(0,255,0,100-transparency);
+     strokeWeight(2);
      if(direction==0){
        line(x+3,y,x-3,y);
      }else if(direction==1){

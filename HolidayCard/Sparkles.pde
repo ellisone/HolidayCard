@@ -39,7 +39,13 @@ class Sparkle{
     x=x1;
     y=y1;
     xVe=-xv*((float)(Math.random())+.5);
+    if(xVe>0){
+      xVe-=s.xVel*3;
+    }
     yVe=-yv*((float)(Math.random())+.5);
+    if(yVe>0){
+      yVe-=s.yVel*3;
+    }
     transparency=0;
   }
   
@@ -52,8 +58,8 @@ class Sparkle{
      transparency++;
      noStroke();
      fill(255,255,0,100-(int)(transparency/10));
-     ellipse(x,y,6,1);
-     ellipse(x,y,1,6);
+     ellipse(x,y,8,2);
+     ellipse(x,y,2,8);
        
    }
    
