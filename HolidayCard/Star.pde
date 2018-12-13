@@ -51,7 +51,7 @@ class Star{
     triangle(x,y,x+26,y,x-12,y-12);
     triangle(x,y,x+26,y,x-12,y+12);
     triangle(x,y,x+12,y-20,x+12,y+20);
-    
+    triangle(x+26,y,x,y+5,x,y-5);
   }
   
   void render(){
