@@ -7,10 +7,7 @@ Sparkles sp;
 
 void setup() {
   size(1120, 630);
-  //size(600, 600);
   s = new Sky(0, 0, (float)(Math.random()-0.5), (float)(Math.random()-0.5));
-  //s = new Sky(0, 0, 0, 0);
-  //s.xVel = 10; s.yVel = -7;
   s.generateStars(0, 0, width, height);
   timer1 = 0;
   tree = new Tier[3];

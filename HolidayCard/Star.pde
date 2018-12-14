@@ -44,11 +44,7 @@ class Star{
     }else if(y>=height-100){
       yA=-.25;
     }
-
     
-    //you can delete this its just for testing purposes
-    //x = mouseX;
-    //y = mouseY;
     
     xReal = s.xPos + x;
     yReal = s.yPos + y;

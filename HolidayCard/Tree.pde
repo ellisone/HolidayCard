@@ -23,7 +23,6 @@ class Tier{
   void render(){
     stroke(#ff0000);
     fill(#ff0000);
-    //line(xS - s.xPos, yS - s.yPos, xE - s.xPos, yE - s.yPos);
     noStroke();    
     fill(#00ff00);
     triangle(xS - s.xPos, yS - s.yPos, xE + wid*(yE - yS) - s.xPos - hei*(xE - xS), yE + wid*(xS - xE) - s.yPos - hei*(yE - yS), xE + wid*(yS - yE) - s.xPos - hei*(xE - xS), yE + wid*(xE - xS) - s.yPos - hei*(yE - yS));
